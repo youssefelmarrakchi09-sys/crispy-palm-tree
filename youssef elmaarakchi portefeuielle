@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio — EL MARRAKCHI YOUSSEF</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+<style>
+    :root {
+        --bg: #f5f7fa;
+        --text: #1c1f23;
+        --primary: #0057ff;
+        --secondary: #0a0f29;
+        --card: #ffffff;
+    }
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+    body {background: var(--bg); color: var(--text);}    
+
+    header {
+        background: var(--secondary);
+        padding: 60px 20px;
+        color: white;
+        text-align: center;
+    }
+
+    header h1 {font-size: 36px; font-weight: 700;}
+    header h2 {font-size: 18px; opacity: 0.8; margin-top: 6px;}
+
+    .container {
+        width: 90%;
+        max-width: 1100px;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        gap: 32px;
+    }
+
+    .sidebar {
+        background: var(--card);
+        border-radius: 14px;
+        padding: 24px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .photo {
+        width: 100%; height: 300px; border-radius: 12px; overflow: hidden; background: #d9dee7;
+        margin-bottom: 20px;
+    }
+
+    .photo img {width: 100%; height: 100%; object-fit: cover;}
+
+    .sidebar h3 {margin-bottom: 12px; font-size: 18px; font-weight: 600;}
+    .sidebar p, .sidebar a {font-size: 14px; line-height: 1.6; color: var(--text);}    
+
+    .chip {display: inline-block; background: #e6ebf5; padding: 6px 10px; border-radius: 6px; font-size: 13px; margin: 4px 4px 0 0;}    
+
+    main section {background: var(--card); padding: 24px; margin-bottom: 30px; border-radius: 14px; box-shadow: 0 4px 14px rgba(0,0,0,0.06);}    
+
+    main h3 {font-size: 20px; margin-bottom: 16px; color: var(--primary);}    
+
+    .item {margin-bottom: 18px;}
+    .item .title {font-weight: 600;}
+    .item .date {font-size: 14px; color: gray; margin-bottom: 4px;}
+
+    ul {margin-left: 20px; margin-top: 10px; line-height: 1.8;}
+
+    @media(max-width: 900px) {
+        .container {grid-template-columns: 1fr;}
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>EL MARRAKCHI YOUSSEF</h1>
+    <h2>Futur Ingénieur Biomédical — À la recherche d’un stage</h2>
+</header>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="photo">
+            <img src="photo.jpg" alt="Votre photo" />
+        </div>
+
+        <h3>Profil</h3>
+        <p>Je suis un futur ingénieur en génie biomédical, motivé, autonome et passionné par l’innovation. Je cherche un stage pour développer mes compétences techniques et mettre en pratique mes connaissances.</p>
+
+        <h3>Contact</h3>
+        <p><strong>Téléphone :</strong> +212 700 343 399</p>
+        <p><strong>Email :</strong> Elmarrakchiyoussef4@gmail.com</p>
+        <p><strong>Localisation :</strong> Essaouira</p>
+        <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/youssef-elmarrakchi-ba534627a" target="_blank">Profil LinkedIn</a></p>
+
+        <h3>Langues</h3>
+        <span class="chip">Français (B2)</span>
+        <span class="chip">Anglais (B1)</span>
+        <span class="chip">Arabe (Langue maternelle)</span>
+
+        <h3>Logiciels</h3>
+        <span class="chip">MATLAB</span>
+        <span class="chip">CATIA V5</span>
+        <span class="chip">SolidWorks</span>
+        <span class="chip">TIA Portal</span>
+        <span class="chip">Automation Studio</span>
+        <span class="chip">Dialux EVO</span>
+        <span class="chip">PL7</span>
+        <span class="chip">SQL</span>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <section>
+            <h3>Formation</h3>
+            <div class="item">
+                <div class="title">Ingénieur Biomédical — SUPTECH SANTÉ MOHAMMEDIA</div>
+                <div class="date">2024 — 2027</div>
+            </div>
+            <div class="item">
+                <div class="title">Technicien spécialisé en Électromécanique — Institut des Mines de Touissit</div>
+                <div class="date">2022 — 2024</div>
+            </div>
+            <div class="item">
+                <div class="title">Baccalauréat en Sciences physiques</div>
+                <div class="date">2021 — 2022</div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Expériences Professionnelles</h3>
+
+            <div class="item">
+                <div class="date">06/2025 — 07/2025</div>
+                <div class="title">Stage — AKDITAL TANGER</div>
+                <p>Gestion GMAO, maintenance des équipements biomédicaux, participation aux appels d'offres.</p>
+            </div>
+
+            <div class="item">
+                <div class="date">04/2024 — 06/2024</div>
+                <div class="title">Stage PFE — VINCI ENERGIES / ACTIMIUM</div>
+                <p>Conception d'une solution de contrôle commande TIA Portal pour un système d’extinction incendie à DCI Jorf Lasfar.</p>
+            </div>
+
+            <div class="item">
+                <div class="date">01/08/2024 — 01/10/2024</div>
+                <div class="title">Automaticien — VINCI ENERGIES</div>
+            </div>
+
+            <div class="item">
+                <div class="date">Stages antérieurs</div>
+                <p>Aya Gold & Silver — Maintenance électrique<br>Hôtel Atlas & Spa — Maintenance climatisation & signalisation</p>
+            </div>
+        </section>
+
+        <section>
+            <h3>Compétences Techniques</h3>
+            <ul>
+                <li>Anatomie et physiologie</li>
+                <li>Instrumentation médicale</li>
+                <li>Maintenance biomédicale</li>
+                <li>Traitement du signal</li>
+                <li>Programmation (C/C++/Python/SQL)</li>
+                <li>Réalisation de schémas électriques</li>
+                <li>Circuits pneumatiques et hydrauliques</li>
+                <li>Essais des machines électriques</li>
+                <li>Conception mécanique/électrique</li>
+                <li>5S, 5M, AMDEC, Pareto</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Certificats & Projets</h3>
+            <ul>
+                <li>Conception d’un mandrin (Certification)</li>
+                <li>Robot solveur de labyrinthe Arduino (Projet certifié)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Qualités Personnelles</h3>
+            <ul>
+                <li>Responsabilité</li>
+                <li>Esprit d’équipe</li>
+                <li>Résolution de problèmes</li>
+                <li>Sportif — discipline & rigueur</li>
+            </ul>
+        </section>
+
+    </main>
+</div>
+
+</body>
+</html>
